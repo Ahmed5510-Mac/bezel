@@ -1,0 +1,435 @@
+/*#==================== 0) basic foramt ================== */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+}
+h6{
+    font-size: .9rem !important;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.main-color{
+    color: #00c3da !important;
+}
+.bg-color{
+    background-color: #00c3da !important;
+}
+/*#==================== 1) Navigation ber ================== */
+.navbar-light .navbar-nav .nav-link{
+    padding: 2rem .8rem;
+    color: #e1e1e1 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #787878 !important;
+}
+.logo{
+    max-height: 40px;
+    width: 80px;
+    
+
+
+}
+.logo-dark{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    
+}
+@media (max-width: 991.98px){
+    .navbar {
+        background-color: #F8F9FA !important;
+    }
+    .navbar .container{
+        padding-right: 1rem; 
+        padding-left: 1rem;
+    }
+    .logo-light{
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+        
+    }
+    .logo-dark{
+        opacity: 1;
+        height: 40px;
+        width: 80px;
+    }
+    
+}
+
+
+/*
+==================== 2) Header text =======================
+*/
+.header-text h1{
+   
+    font-family: 'Poppins';
+    color: #1f1f1f;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+.header-text .links .a-active{
+    background-color: #00c3da;
+    border: 1px solid #00c3da;
+}
+.header-text .links a{
+    transition: bottom 0.4s ease;
+    -webkit-transition: bottom 0.4s ease;
+    -moz-transition: bottom 0.4s ease;
+    -ms-transition: bottom 0.4s ease;
+    -o-transition: bottom 0.4s ease;
+}
+
+.header-text .links .a-link:hover{
+background-color: #fff !important;
+color: #1f1f1f !important;
+} 
+
+.a-move:hover{
+    bottom:1px;
+}
+.bg-image{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-header1{
+    background-image: url("../images/bg-image-28.jpg");
+    
+    
+}
+.bg-header2{
+   background-image: url("../images/bg-image-29.jpg");
+  
+}
+header .layer{
+   background-color:rgba(0, 0, 0, .6);
+    
+}
+
+
+
+/* =========== 3) header carousel indicators ==================== */
+
+@media (min-width:768px){
+    .arrows{
+        top: 25%; 
+    }
+    .prevarrow{
+        position: absolute;
+        top:0;
+        left: 0;   
+    }
+    .nextarrow{
+        position: absolute;
+        top:50px;
+        left: 0; 
+        width: 50px;
+        
+    }
+    .arrow{
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-left: 0;
+        transition: all 0.3 ease-in-out ;
+        -webkit-transition: all 0.3 ease-in-out ;
+        -moz-transition: all 0.3 ease-in-out ;
+        -ms-transition: all 0.3 ease-in-out ;
+        -o-transition: all 0.3 ease-in-out ;
+    }
+    .prevarrow:hover .arrow {
+        color: #000;
+        z-index: 222222;
+    }
+    .nextarrow:hover .arrow {
+        color: #000;
+        z-index: 222222;
+    }
+    .arrow-hover{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        height: 50px;
+        z-index: 1000;
+        transition: all .4s ease-in-out ;
+        -webkit-transition: all .4s ease-in-out ;
+        -moz-transition: all .4s ease-in-out ;
+        -ms-transition: all .4s ease-in-out ;
+        -o-transition: all .4s ease-in-out ;
+    }
+    .arrow:hover .arrow-hover{
+        width: 50px; 
+        left: 0; 
+        z-index: -1; 
+    }
+}
+
+/* =========== 4) About Section ==================== */
+#about{
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+#about .about-text>h6{
+    font-size: .9rem;
+    color: #1f1f1f;
+
+}
+#about .about-text>p{
+    font-size: 1.3rem;
+    
+}
+#about .about-text>a{
+    font-size: .9rem;
+    color: #000;
+    padding: .8rem 1.6rem;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+#about .about-text>a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* =========== 4) Team Section ==================== */
+.title{
+    font-size:3rem;
+}
+.title::after{
+    content: "C";
+    font-size: 5rem;
+    color: #bda9a9;
+    opacity: .1;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.team-item{
+    overflow: hidden;
+}
+.layer-team{
+    width: 100%;
+    height: 100%;
+    background-color: #00c3da;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.layer-team .team-icon{
+  color: #fff; 
+  font-size: .9rem; 
+}
+.layer-team .team-icon :hover{
+    color: #F8F9FA !important; 
+    
+  }
+ 
+  .team-item:hover .layer-team{
+    top: 0;
+    opacity: .9;
+  }
+  .layer-team .layer-text{
+    bottom: 0;
+    left: 0;
+  }
+
+  /* =========== 5) work Section ==================== */
+  #work{
+      background-color: #636363;
+  }
+  .work-item i{
+      font-size: 3rem;
+  }
+  .work-item>h6{
+      font-size: .75rem;
+      color: #fff;
+      letter-spacing: .1rem;
+  }
+  @media (max-width: 992px){
+    .work-do {
+        
+        text-align: center;
+    }
+    .work-do h2::after{
+        width: 100px;
+        bottom: 100%;
+        left: 50% !important;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+  }
+
+  .work-do h2{
+    font-size:3rem;
+    position: relative;
+    
+    
+}
+.work-do h2::after{
+    content: "W";
+    font-size: 5rem;
+    color: #bda9a9;
+    opacity: .1;
+    position: absolute;
+    bottom:0;
+    left:-10px;
+    
+}
+.work-list li{
+    margin-bottom: 20px;
+    
+}
+    /* =========== 6) Plans Prices  Section ==================== */
+
+#plans{
+background-color: #F8F9FA;
+}
+#plans .price h2{
+    font-size: 3rem;
+}
+#plans .price h2 span{
+    font-size: .9rem;
+    vertical-align: top;
+}
+#plans .price{
+    border-bottom: 1px solid #e1e1e1;
+}
+.plan-table a{
+    background-color: #00c3da;
+    border: 0;
+    transition:  0.4s ease;
+    -webkit-transition:  0.4s ease;
+    -moz-transition:  0.4s ease;
+    -ms-transition:  0.4s ease;
+    -o-transition:  0.4s ease;
+}
+.plan-table a:hover{
+    background-color: #00c3da;
+}
+.table-head .tag{
+font-size: .6rem;
+padding: .4rem .7rem;
+letter-spacing: .1rem;
+color: #F8F9FA;
+}
+
+    /* =========== 7) Customer  Section ==================== */
+    #customer{
+        background-color: #F8F9FA;
+        }
+    .customer-item p{
+        line-height: 2rem;
+    }
+    .customer-item{
+        text-align: center;
+        padding: 4rem;
+    }
+    .cutomer-img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom:100%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        -webkit-transform: translate(-50%,50%);
+        -moz-transform: translate(-50%,50%);
+        -ms-transform: translate(-50%,50%);
+        -o-transform: translate(-50%,50%);
+}
+.customer-item h6{
+    font-size: .7rem !important;
+}
+
+
+@media (max-width:992px){
+    #customer #carouselCustomer .carousel-control-prev, #customer #carouselCustomer .carousel-control-next{
+        
+        opacity: 0;
+    }
+    #customer .hide{
+        
+        opacity: 0;
+    }
+  }
+ 
+#customer #carouselCustomer .carousel-control-prev, #customer #carouselCustomer .carousel-control-next{
+    font-size:1.5rem;
+    opacity: 1;
+}
+
+#carouselCustomer .next-icon{
+    color: red !important; 
+    border: 1px solid #00c3da;
+}
+
+  #customer #carouselCustomer .carousel-indicators li{
+     width: 10px;
+     height: 10px;
+     background-color:#787878;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+
+}
+#customer #carouselCustomer .carousel-indicators .active{
+    background-color: #00c3da;
+}
+
+    /* =========== 8) Contact us  Section ==================== */
+    #contact{
+        background-color: #fff;
+    }
+    .form-group button{
+    background-color: #00c3da;
+    border: 0;
+    transition:  0.4s ease;
+    -webkit-transition:  0.4s ease;
+    -moz-transition:  0.4s ease;
+    -ms-transition:  0.4s ease;
+    -o-transition:  0.4s ease;
+    }
+    .form-group button:hover{
+        background-color: #00c3da;
+    }
+
+    .form-title h2{
+        font-size:3rem;
+        position: relative;
+    }
+    .form-title h2::after{
+        content: "G";
+        font-size: 5rem;
+        color: #bda9a9;
+        opacity: .1;
+        position: absolute;
+        bottom: 0;
+        left: -2%;
+    }
+       
